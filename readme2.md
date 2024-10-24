@@ -1,13 +1,6 @@
 
 # Franquicia API - Proyecto de Manejo de Franquicias
 
-Este proyecto es una API desarrollada en Spring Boot para manejar una lista de franquicias, sucursales y productos. La API permite agregar nuevas franquicias, sucursales y productos, así como modificar el stock de un producto, entre otras funcionalidades.
-
-## Requerimientos
-- **Lenguaje:** Java (Spring Boot)
-- **Base de Datos:** MySQL (o Redis/MongoDB/DynamoDB, según preferencia)
-- **Opcional:** Empaquetado con Docker, Programación Reactiva, Terraform para aprovisionamiento.
-
 ## Endpoints
 
 ### 1. Agregar nueva franquicia
