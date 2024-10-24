@@ -29,7 +29,7 @@ Esta es una aplicación desarrollada en **Spring Boot** para gestionar franquici
 
 Antes de ejecutar la aplicación, asegúrate de tener instalado:
 
-- **Java 11** o superior
+- **Java 17** 
 - **Maven**
 - **Docker**
 - **Docker Compose**
@@ -110,26 +110,4 @@ Para gestionar la infraestructura en AWS utilizando Terraform:
    cd terraform
    terraform init
    terraform apply
-   ```
-
-## Testing
-
-La aplicación incluye pruebas unitarias. Para ejecutar las pruebas, utiliza:
-
-```bash
-./mvnw test
-```
-
-## Contribuciones
-
-¡Contribuciones son bienvenidas! Por favor, sigue estos pasos para contribuir:
-
-1. Haz un fork del proyecto.
-2. Crea una nueva rama (`git checkout -b feature/nueva-caracteristica`).
-3. Realiza tus cambios y haz commit (`git commit -m 'Añadir nueva característica'`).
-4. Haz push a la rama (`git push origin feature/nueva-caracteristica`).
-5. Crea un Pull Request.
-
-## Licencia
-
-Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+   ``
