@@ -123,31 +123,4 @@
   "id": 1,
   "nombre": "Nuevo Nombre Franquicia"
 }
-```
-
-## Despliegue con Docker
-Para desplegar la aplicación utilizando Docker, sigue estos pasos:
-1. Asegúrate de tener Docker instalado.
-2. Clona este repositorio.
-3. Construye la imagen Docker:
-   ```
-   docker build -t franquicia-api .
-   ```
-4. Corre la aplicación:
-   ```
-   docker run -p 8080:8080 franquicia-api
-   ```
-
-## Base de Datos
-Puedes configurar la base de datos MySQL con las siguientes credenciales en el archivo `application.properties`:
-```
-spring.datasource.url=jdbc:mysql://localhost:3306/franquiciasdb
-spring.datasource.username=root
-spring.datasource.password=yourpassword
-```
-
-## Despliegue en la Nube (Punto Extra)
-Si decides desplegar la solución en la nube, sigue las instrucciones específicas de la plataforma que estés utilizando (AWS, Google Cloud, Azure) para configurar la base de datos y el servidor.
-
-## Git Workflow
-Recuerda hacer commits constantes con mensajes descriptivos y mantener el código organizado en ramas.
+``
