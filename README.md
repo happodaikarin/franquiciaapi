@@ -12,9 +12,6 @@ Esta es una aplicación desarrollada en **Spring Boot** para gestionar franquici
 - [Variables de Entorno](#variables-de-entorno)
 - [Despliegue con Docker](#despliegue-con-docker)
 - [Infraestructura con Terraform](#infraestructura-con-terraform)
-- [Testing](#testing)
-- [Contribuciones](#contribuciones)
-- [Licencia](#licencia)
 
 ## Características
 
