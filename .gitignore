@@ -1,4 +1,4 @@
-HELP.md
+### Maven ###
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
@@ -32,8 +32,14 @@ build/
 ### VS Code ###
 .vscode/
 
+### Archivos de configuración y sensibles ###
 .env
+key-franquicia.pem
 
+### Terraform ###
 terraform/.terraform/
 terraform/terraform.tfstate
 terraform/terraform.tfstate.backup
+
+### Otros archivos grandes ###
+terraform/.terraform/providers/registry.terraform.io/hashicorp/aws/5.72.1/linux_amd64/terraform-provider-aws_v5.72.1_x5
