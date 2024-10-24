@@ -1,3 +1,12 @@
+/**
+ * Controlador REST para gestionar franquicias, sucursales y productos.
+ * 
+ * - Proporciona endpoints para CRUD de franquicias, sucursales y productos.
+ * - Usa servicios (FranquiciaService, SucursalService, ProductoService) para la lógica de negocio.
+ * - Maneja relaciones entre franquicias, sucursales y productos.
+ * - Utiliza ResponseEntity para manejar respuestas HTTP de manera clara.
+ */
+
 package com.ramses.franquiciaapi.controller;
 
 
@@ -70,16 +79,17 @@ public class FranquiciaController {
         }
     }
 
-    // Endpoint para agregar un nuevo producto a una sucursal
-    @PostMapping("/sucursales/{sucursalId}/productos")
-    public ResponseEntity<?> agregarProducto(@PathVariable Long sucursalId, @RequestBody Producto producto) {
-        try {
-            Producto creado = productoService.agregarProducto(sucursalId, producto);
-            return ResponseEntity.ok(creado);
-        } catch (Exception e) {
-            return ResponseEntity.badRequest().body(e.getMessage());
-        }
+    @PostMapping("/{franquiciaId}/sucursales/{sucursalId}/productos")
+public ResponseEntity<?> agregarProducto(@PathVariable Long franquiciaId, @PathVariable Long sucursalId, @RequestBody Producto producto) {
+    try {
+        Producto creado = productoService.agregarProducto(sucursalId, producto);
+        return ResponseEntity.ok(creado);
+    } catch (Exception e) {
+        return ResponseEntity.badRequest().body(e.getMessage());
     }
+}
+
+    
 
     // Endpoint para eliminar un producto de una sucursal
     @DeleteMapping("/productos/{productoId}")

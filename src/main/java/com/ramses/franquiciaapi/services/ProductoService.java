@@ -1,6 +1,7 @@
 package com.ramses.franquiciaapi.services;
 
 import com.ramses.franquiciaapi.model.Producto;
+import com.ramses.franquiciaapi.model.Sucursal;
 import com.ramses.franquiciaapi.repository.ProductoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,10 +19,14 @@ public class ProductoService {
     private SucursalService sucursalService;
 
     public Producto agregarProducto(Long sucursalId, Producto producto) throws Exception {
-        // Verificar que la sucursal exista
-        sucursalService.obtenerSucursalPorId(sucursalId)
+        // Verificar que la sucursal exista y obtenerla
+        Sucursal sucursal = sucursalService.obtenerSucursalPorId(sucursalId)
                 .orElseThrow(() -> new Exception("Sucursal no encontrada"));
-        producto.setSucursal(sucursalService.obtenerSucursalPorId(sucursalId).get());
+
+        // Establecer la sucursal en el producto
+        producto.setSucursal(sucursal);
+
+        // Guardar el producto en la base de datos
         return productoRepository.save(producto);
     }
 

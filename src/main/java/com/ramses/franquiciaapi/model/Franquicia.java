@@ -1,3 +1,12 @@
+/**
+ * Representa una entidad 'Franquicia' en el sistema, que gestiona varias 'Sucursales'.
+ * 
+ * - Usa JPA para mapear la entidad a una base de datos.
+ * - Relación @OneToMany con 'Sucursal', gestionando las sucursales con cascada y eliminación de huérfanos.
+ * - La anotación @JsonManagedReference permite la correcta serialización JSON de las sucursales.
+ * - Lombok genera automáticamente getters, setters y constructores.
+ */
+
 package com.ramses.franquiciaapi.model;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
