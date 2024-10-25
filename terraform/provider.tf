@@ -5,5 +5,5 @@
 # - Cambiar a la región preferida si es necesario.
 
 provider "aws" {
-  region = "us-east-1"  # Cambia a tu región preferida si es necesario
+  region = "us-east-1"
 }
