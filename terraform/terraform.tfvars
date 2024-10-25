@@ -9,7 +9,7 @@
 
 
 db_username     = "admin"
-db_password     = "newpassword"  # Reemplaza con tu contraseña real
+db_password     = "newpassword"  
 db_endpoint     = "franquiciodbcloud.c3ue6a2oia51.us-east-1.rds.amazonaws.com"
-container_image = "tu_usuario/tu_imagen:latest"  # Reemplaza con tu imagen Docker
-ami_id          = ""  # Déjalo vacío si usas el data source para el AMI
+container_image = "tu_usuario/tu_imagen:latest"  
+ami_id          = ""  
